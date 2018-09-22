@@ -46,7 +46,12 @@ class StepsForDayTest {
         assertEquals(steps, 0);
 
         sfd.inputSteps(2000);
-        assertEquals(steps, 2000);
+        assertEquals(sfd.get(), 2000);
+
+        //sfd.inputSteps(2000);
+        //steps = sfd.get();
+        //assertEquals(steps, 2000);
+
     }
 
     /*
