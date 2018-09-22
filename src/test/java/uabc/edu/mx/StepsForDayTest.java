@@ -21,6 +21,7 @@ class StepsForDayTest {
         sfd.inputSteps(2000);
         int steps = sfd.get();
         assertEquals(steps,2000);
+
     }
 
     @Test
