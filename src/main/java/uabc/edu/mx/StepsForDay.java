@@ -1,8 +1,8 @@
 package uabc.edu.mx;
 
 public class StepsForDay {
-    int steps;
-    int goal;
+    private int steps;
+    protected int goal;
 
     public StepsForDay(int goal) {
         this.goal = goal;
