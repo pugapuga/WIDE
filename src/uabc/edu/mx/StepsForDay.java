@@ -1,29 +1,29 @@
 package uabc.edu.mx;
 
 public class StepsForDay {
-    int steps;
-    int goal;
+    private int steps;
+    private int goal;
 
-    StepsForDay(int goal) {
+    public StepsForDay(int goal) {
         this.goal = goal;
         this.steps = 0;
     }
 
-    void inputSteps(int steps) {
+    public void inputSteps(int steps) {
         this.steps = steps;
     }
 
-    void addSteps(int steps) {
-        this.steps = steps;
+    public void addSteps(int steps) {
+        this.steps += steps;
     }
 
-    void clearSteps(){
+    public void clearSteps(){
         this.steps = 0;
     }
 
-    int get() { return steps; }
+    public int get() { return steps; }
 
-    boolean metGoal(){
+    public boolean metGoal(){
         return steps >= goal;
     }
 
